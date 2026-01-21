@@ -1,11 +1,11 @@
-# 🎮 Tic Tac Toe – Java Console Application
+#  Tic Tac Toe – Java Console Application
 
 A Java-based **command-line Tic Tac Toe game** designed for two players.  
 This project emphasizes **simple gameplay**, **safe input handling**, and a **clean board layout**, making it ideal for beginners and academic projects.
 
 ---
 
-## 📌 Project Features
+##  Project Features
 
 - ✔ Two-player mode (X vs O)
 - ✔ Custom player names
@@ -19,7 +19,7 @@ This project emphasizes **simple gameplay**, **safe input handling**, and a **cl
 
 ---
 
-## 🧠 Game Rules
+##  Game Rules
 
 - The game is played on a **3×3 grid**
 - Player 1 uses **X**
@@ -80,3 +80,4 @@ The program is designed to handle incorrect inputs gracefully and prevent runtim
 ## 📁 Project Structure
 
 <img width="230" height="132" alt="image" src="https://github.com/user-attachments/assets/4ba550cd-1f5b-45a2-b645-2064e91dc692" />
+
