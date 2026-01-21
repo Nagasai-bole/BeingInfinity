@@ -1,115 +1,82 @@
-🎯 Tic Tac Toe – Java Console Application
+# 🎮 Tic Tac Toe – Java Console Application
 
-A console-based Tic Tac Toe game developed in Java, designed for two human players.
-The program focuses on clean gameplay, robust input handling, and a clear board interface, making it suitable for beginners and academic submissions.
+A Java-based **command-line Tic Tac Toe game** designed for two players.  
+This project emphasizes **simple gameplay**, **safe input handling**, and a **clean board layout**, making it ideal for beginners and academic projects.
 
-✨ Key Highlights
+---
 
-🎮 Two-player mode (Player X vs Player O)
+## 📌 Project Features
 
-🧑 Players can enter custom names
+- ✔ Two-player mode (X vs O)
+- ✔ Custom player names
+- ✔ Standard 3×3 Tic Tac Toe board
+- ✔ Row and column based input system
+- ✔ Strong input validation
+- ✔ Automatic win detection
+- ✔ Draw detection when no moves remain
+- ✔ Replay option after each game
+- ✔ Clean, modular, and readable code
 
-📐 Standard 3×3 Tic Tac Toe board
+---
 
-📊 Row–column based move system
+## 🧠 Game Rules
 
-🛑 Strong validation for invalid inputs
-
-🏆 Automatic winner detection
-
-🤝 Draw recognition when the board fills
-
-🔁 Option to replay after each match
-
-🧹 Well-structured and readable Java code
-
-🧩 Game Logic Overview
-
-The game uses a 3×3 grid
-
-First player plays with X
-
-Second player plays with O
-
-Players alternate turns by entering:
-
-row column
+- The game is played on a **3×3 grid**
+- Player 1 uses **X**
+- Player 2 uses **O**
+- Players enter their moves in the format:
 
 
-📌 Example:
+Example:
 
-1 2
+- Row and column indices range from **0 to 2**
+- The game ends when:
+  - A player completes a row, column, or diagonal
+  - OR all cells are filled (draw)
 
+---
 
-Indexing is zero-based (0 to 2)
+## 🖥️ Sample Board Output
 
-A match ends when:
+<img width="240" height="251" alt="image" src="https://github.com/user-attachments/assets/940f9ed6-130c-44ff-84cf-d1514ee4ca10" />
 
-A player completes a line (row, column, or diagonal)
+---
 
-OR all cells are filled without a winner
+## ⚙️ Technologies Used
 
-🖥️ Example Board Display
-    0   1   2
-  +---+---+---+
-0 | O |   | O |
-  +---+---+---+
-1 | O | X | X |
-  +---+---+---+
-2 | X |   |   |
-  +---+---+---+
+- **Java**
+- **Scanner class** for user input
+- **2D character arrays** for board representation
+- **Loops and conditional statements**
+- **Modular methods** for organized logic
 
-🛠️ Technologies & Concepts Used
+---
 
-Java (Core)
+## ▶️ How to Run the Program
 
-Scanner API for user input
+### Step 1: Compile the Java file
 
-2D character arrays for board management
+Ensure Java is installed and added to your system PATH.
 
-Loops & conditionals for game flow
+---
 
-Modular methods for better readability and reuse
+## 🛡️ Input Validation
 
-▶️ Running the Application
-Step 1: Compile
-javac TicTacToe.java
+The program is designed to handle incorrect inputs gracefully and prevent runtime errors.
 
-Step 2: Execute
-java TicTacToe
+### Prevents:
+- Alphabetic or string inputs (e.g., `a b`)
+- Mixed or invalid values
+- Out-of-range numbers (not between 0 and 2)
+- Selecting already occupied cells
 
+### Validation Method:
+- Uses `Scanner.hasNextInt()` to verify input
+- Displays clear error messages
+- Prompts the user until a valid move is entered
 
-Make sure Java is installed and configured properly on your system.
+---
 
-🔐 Input Safety & Validation
+## 📁 Project Structure
 
-The application is built to handle incorrect inputs gracefully and avoid unexpected crashes.
-
-🚫 Handles invalid inputs such as:
-
-Alphabetic characters (x y)
-
-Mixed or string inputs
-
-Numbers outside the valid range (0–2)
-
-✅ Validation strategy:
-
-Uses hasNextInt() before reading input
-
-Prevents overwriting occupied cells
-
-Displays meaningful error messages
-
-Keeps prompting until a valid move is provided
-
-📂 Folder Structure
-TicTacToe/
-│
-├── TicTacToe.java
-└── README.md
-
-👤 Developer
-Nagasai
-B.Tech Undergraduate | Java & DSA Learner
-Interested in building logical, user-friendly console applications 🚀
+<img width="230" height="132" alt="image" src="https://github.com/user-attachments/assets/4ba550cd-1f5b-45a2-b645-2064e91dc692" />
